@@ -1,4 +1,4 @@
-package info.gezielcarvalho.quadropesquisa;
+package info.emanoellesiqueira.quadropesquisa;
 
 import android.content.Context;
 

@@ -1,14 +1,12 @@
-package info.gezielcarvalho.quadropesquisa;
+package info.emanoellesiqueira.quadropesquisa;
 
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.Iterator;
 
 public class DataGet extends AsyncTask<String,Void,String> {
 
@@ -43,6 +41,7 @@ public class DataGet extends AsyncTask<String,Void,String> {
 
         try{
             JSONObject jsonResponse = new JSONObject(s);
+            Log.i("vazio", String.valueOf(jsonResponse));
             String searchid = jsonResponse.getString("id");
             String searchtitle = jsonResponse.getString("title");
             String searchcompleted = jsonResponse.getString("completed");
@@ -53,7 +52,7 @@ public class DataGet extends AsyncTask<String,Void,String> {
 
         }
         catch(JSONException e){
-            this.txtTitle.setText("erroJSON");
+            this.txtid.setText("ID não encontrado!");
 
         }
     }

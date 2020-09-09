@@ -1,4 +1,4 @@
-package info.gezielcarvalho.quadropesquisa;
+package info.emanoellesiqueira.quadropesquisa;
 
 import java.io.BufferedReader;
 import java.io.IOException;
